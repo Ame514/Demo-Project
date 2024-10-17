@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Webentwicklungs- und Designagentur.">
+    <title>WebEntwicklung & Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+   
+           
+		<nav>
+			<div class="logo">Dein Logo</div>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li>
+					<a href="#service" onclick="toggleDropdown(event)">Dienstleistungen</a>
+					<ul>
+						<li><a href="#Webdesign">Web-Design</a></li>
+						<li><a href="#WebEntwicklung">Web-Entwicklung</a></li>
+						<li><a href="#Responsive">Responsive Design</a></li>
+				    </ul>
+				</li>
+				<li><a href="#about">Über Uns</a></li>
+				<li><a href="#contact">Kontakt</a></li>
+			</ul>
+			<div class="hamburger" onclick="toggleMenu()">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</nav>
+<main>
+		
+    
+
+    <!-- Hero Section -->
+    <section onmouseover="change(this)" onmouseout="change2(this)" id="home" class="hero">
+        
+        <div class="container">
+            <h2>Professionelle Webentwicklung und modernes Design</h2>
+            <p>Wir schaffen digitale Erlebnisse, die beeindrucken und konvertieren.</p>
+            <a href="#contact" class="btn">Kontakt aufnehmen</a>
+        </div>
+    </section>
+
+    <section class="willkommen">
+        <div class="container">
+        <h1>Willkommen auf unserer Webseite</h1>
+        <h2>Ihr Partner für professionelles Webdesign und Webentwicklung</h2>
+        <a href="#about" class="btn">Mehr über uns</a>
+
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Unsere Dienstleistungen</h2>
+            <div class="service-box">
+                <div id="Webdesign" class="service">
+                    <h3>Webdesign</h3>
+                    <p>Webdesign ist der Schlüssel zu einer erfolgreichen Online-Präsenz. Wir erstellen moderne, benutzerfreundliche Webseiten, die sowohl auf Desktop als auch auf mobilen Geräten optimal funktionieren. Mit einem klaren Fokus auf ansprechendes Design, intuitive Benutzerführung und schnelle Ladezeiten sorgen wir dafür, dass Ihre Webseite nicht nur gut aussieht, sondern auch effektiv ist. Von der ersten Idee bis zur finalen Umsetzung arbeiten wir eng mit Ihnen zusammen, um sicherzustellen, dass Ihre Webseite Ihre Marke perfekt repräsentiert.</p>
+                </div>
+                <div id="WebEntwicklung" class="service">
+                    <h3>Webentwicklung</h3>
+                    <p>Webentwicklung bildet das technische Rückgrat Ihrer Webseite. Wir programmieren leistungsstarke, skalierbare Webseiten und Webanwendungen, die zuverlässig und schnell funktionieren. Ob einfache Webseiten oder komplexe, datenbasierte Anwendungen – wir setzen moderne Technologien ein, um maßgeschneiderte Lösungen zu entwickeln, die Ihren geschäftlichen Anforderungen gerecht werden. Unser Fokus liegt auf Stabilität, Sicherheit und einer reibungslosen Benutzererfahrung, damit Ihre Webseite jederzeit optimal performt.</p>
+                </div>
+                <div id="Responsive" class="service">
+                    <h3>Responsive Design</h3>
+                    <p>Responsive Design stellt sicher, dass Ihre Webseite auf allen Geräten – ob Smartphone, Tablet oder Desktop – perfekt aussieht und funktioniert. Wir entwickeln flexible Layouts, die sich automatisch an verschiedene Bildschirmgrößen anpassen, um eine optimale Benutzererfahrung zu gewährleisten. Egal, welches Gerät Ihre Besucher nutzen, Ihre Webseite bleibt stets benutzerfreundlich, schnell und ansprechend.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Über uns mit Slideshow -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Über uns</h2>
+            <p>Willkommen auf unserer Webseite! Wir freuen uns, dass Sie den Weg zu uns gefunden haben. Wir sind Ihr zuverlässiger Partner für Webdesign und Webentwicklung und bieten maßgeschneiderte digitale Lösungen, die perfekt auf die Bedürfnisse Ihres Unternehmens zugeschnitten sind.
+
+                Unsere Expertise reicht von der kreativen Gestaltung moderner, benutzerfreundlicher Webseiten bis hin zur technischen Entwicklung leistungsstarker Webanwendungen. Ganz gleich, ob Sie eine einfache, stilvolle Webseite oder eine komplexe, interaktive Plattform benötigen – wir setzen Ihre Vision professionell und effizient um.
+                
+                Unsere Leistungen im Überblick:
+                
+                Webdesign: Wir gestalten ansprechende, individuelle Webseiten, die nicht nur gut aussehen, sondern auch optimal auf verschiedenen Geräten und Browsern funktionieren.
+                Webentwicklung: Mit modernsten Technologien programmieren wir performante, skalierbare Webseiten und Anwendungen, die Ihre Geschäftsprozesse unterstützen und optimieren.
+                Wartung und Support: Auch nach der Fertigstellung sind wir für Sie da und kümmern uns um die regelmäßige Wartung, Updates und die kontinuierliche Optimierung Ihrer Webseite.
+                Wir legen großen Wert auf Benutzerfreundlichkeit, Suchmaschinenoptimierung (SEO) und Responsive Design, sodass Ihre Webseite nicht nur auf dem Desktop, sondern auch auf mobilen Geräten eine optimale Nutzererfahrung bietet.
+                
+                Lassen Sie uns gemeinsam Ihre digitale Präsenz stärken und die Basis für Ihren Online-Erfolg schaffen. Kontaktieren Sie uns für eine unverbindliche Beratung – wir freuen uns darauf, Ihr Projekt mit unserer Expertise voranzutreiben!</p>
+            
+            <p>Wir sind ein erfahrenes Team, das sich darauf spezialisiert hat, herausragende digitale Lösungen zu liefern.</p>
+            <h2>Unsere Certificate</h2>
+            <!-- Slideshow -->
+            <div class="slideshow-container">
+
+                <!-- Bilder für die Slideshow -->
+                <div class="mySlides fade">
+                    <img src="SW_html5_foundations.png" alt="Slide 1">
+                </div>
+            
+                <div class="mySlides fade">
+                    <img src="SW_css3_foundations.png" alt="Slide 2">
+                </div>
+            
+                <div class="mySlides fade">
+                    <img src="SW_javascript_foundations.png" alt="Slide 3">
+                </div>
+            
+                <!-- Navigations-Buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            
+            <div class="dots-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+    </section>
+
+    <!-- Kontakt -->
+    <section id="contact" class="contact">
+        <div class="container">
+			<h2>Kontaktieren Sie uns</h2>
+			<form id="contact-form" method="post" action="#">
+				<label for="name">Name</label>
+				<input type="text" id="name" name="name" required>
+	
+				<label for="email">E-Mail</label>
+				<input type="email" id="email" name="email" required>
+	
+				<label for="phone">Telefon (optional)</label>
+				<input type="tel" id="phone" name="phone">
+	
+				<label for="message">Nachricht</label>
+				<textarea id="message" name="message" required></textarea>
+	
+				<button type="submit">Absenden</button>
+			</form>
+			<div id="form-message" class="error"></div>
+		</div>
+    </section>
+</main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p style="color: black;">&copy; 2024 WebEntwicklung & Design. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
