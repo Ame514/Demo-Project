@@ -2,19 +2,21 @@ function toggleMenu() {
     const menu = document.querySelector('nav ul');
     menu.classList.toggle('show');
 }
+
 function dropDown(){
     if(document.getElementById("dropDown").style.display=="block")
         document.getElementById("dropDown").style.display="none";
     else
         document.getElementById("dropDown").style.display="block";
 }
+
 /*
 function toggleDropdown(event) {
     event.preventDefault(); // Verhindert das Standardverhalten des Links
     const dropdown = event.currentTarget.nextElementSibling; // Das Dropdown ist das nächste Geschwisterelement
     dropdown.classList.toggle('show'); // Toggle für das Dropdown-Menü
-}
-*/
+}*/
+
 
 //hero change
 
