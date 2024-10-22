@@ -406,11 +406,4 @@ section h1 {
         padding: 10px;
     }
 }
-@media (max-height: 768px){
-    .hero{
-        height: 300vh;
-    }
-    .willkommen{
-        height: 200vh;
-    }
-}
+
