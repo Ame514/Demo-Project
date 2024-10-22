@@ -1,6 +1,11 @@
+
 function toggleMenu() {
-    const menu = document.querySelector('nav ul');
-    menu.classList.toggle('show');
+
+            if(document.querySelector('nav ul').style.display!=="block")
+                document.querySelector('nav ul').style.display="block";
+            else
+                document.querySelector('nav ul').style.display='none';
+
 }
 
 function dropDown(){
@@ -10,12 +15,21 @@ function dropDown(){
         document.getElementById("dropDown").style.display="block";
 }
 
-/*
-function toggleDropdown(event) {
-    event.preventDefault(); // Verhindert das Standardverhalten des Links
-    const dropdown = event.currentTarget.nextElementSibling; // Das Dropdown ist das nächste Geschwisterelement
-    dropdown.classList.toggle('show'); // Toggle für das Dropdown-Menü
-}*/
+function closeToggle(){
+    if(window.innerWidth < 768){
+        if(document.querySelector('nav ul').style.display!=='none' || document.getElementById("dropDown").style.display!=="none"){
+            document.querySelector('nav ul').style.display='none';
+            document.getElementById("dropDown").style.display="none";
+        }
+    }   
+}
+function closeToggleBig(){
+    if(window.innerWidth > 768){
+        if(document.getElementById("dropDown").style.display!=="none")
+            document.getElementById("dropDown").style.display="none";  
+    }
+}
+
 
 
 //hero change
@@ -83,7 +97,6 @@ const formMessage = document.getElementById('form-message');
 form.addEventListener('submit', function(event) {
     event.preventDefault(); // Verhindert das Standardverhalten des Formulars
             
-    // Hier könnte man z.B. AJAX verwenden, um das Formular zu verarbeiten
 
     // Erfolgsmeldung anzeigen
     formMessage.textContent = 'Vielen Dank für Ihre Nachricht! Wir werden uns bald bei Ihnen melden.';
