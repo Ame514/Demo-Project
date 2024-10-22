@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Webentwicklungs- und Designagentur.">
     <title>WebEntwicklung & Design</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
@@ -15,28 +16,29 @@
            
 		<nav>
 			<div class="logo">Dein Logo</div>
-			<ul >
-				<li><a href="#home">Home</a></li>
+			<ul>
+				<li onclick="closeToggle()"><a href="#home">Home</a></li>
 				<li id="dienst">
 					<a onclick="dropDown()" >Dienstleistungen <p class="arrow down"></p></a>
 					<ul id="dropDown">
-						<li><a href="#Webdesign">Web-Design</a></li>
-						<li><a href="#WebEntwicklung">Web-Entwicklung</a></li>
-						<li><a href="#Responsive">Responsive Design</a></li>
+						<li onclick="closeToggle()"><a href="#Webdesign">Web-Design</a></li>
+						<li onclick="closeToggle()"><a href="#WebEntwicklung">Web-Entwicklung</a></li>
+						<li onclick="closeToggle()"><a href="#Responsive">Responsive Design</a></li>
 				    </ul>
 				</li>
-				<li><a href="#about">Über Uns</a></li>
-				<li><a href="#contact">Kontakt</a></li>
+				<li onclick="closeToggle()"><a href="#about">Über Uns</a></li>
+				<li onclick="closeToggle()"><a href="#contact">Kontakt</a></li>
 			</ul>
 			<div class="hamburger" onclick="toggleMenu()">
 				<div></div>
 				<div></div>
 				<div></div>
 			</div>
+        
 		</nav>
 
 
-<main onclick="toggleMenu(), dropDown()">
+<main onclick="closeToggle(), closeToggleBig()">
 		
     <!-- Hero Section -->
     <section onmouseover="change(this)" onmouseout="change2(this)" id="home" class="hero">
